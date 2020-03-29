@@ -7,61 +7,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></script>
 <?!= include('index_js'); ?>  
 <style>
-* {
-  box-sizing: border-box;
-}
-
-input[type=number], input[type=tel], input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
-
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
-
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
-
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
@@ -72,13 +17,10 @@ input[type=submit]:hover {
 }
 </style>
 </head>
-<body>
+<body style="margin-bottom:125px;">
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdVfuXdY5OK_j8Y_BXY-UxkLffeKDyQRxgjN6eQJEBwYqY5qg/viewform?embedded=true" width="100%" height="1700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-<div class="w3-container">
-<h2>List</h2>
-<div class="w3-responsive">
-<table class="w3-table-all" id="data">
-</table>
+<div class="freebirdFormviewerViewFormContentWrapper">
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQTo2FUPu2kj_U0FU3vfAFk68a_GySYJP0mdvQNoMbYaR6Ebg7_ZOir5L0H8t9OLujz0RFrynGhPFil/pubhtml?widget=true&amp;headers=false"width="370" height="250"></iframe>
 </div>
 </body>
 </html>
