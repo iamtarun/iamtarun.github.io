@@ -3,9 +3,6 @@
 <head>
 <title>Covid-19:Lockdown:Alwar</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></script>
-<?!= include('index_js'); ?>  
 <style>
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
@@ -16,13 +13,32 @@
   }
 }
 </style>
+<script>
+function toggle(){
+  
+     if(document.getElementById("container").style.display=="none"){
+           document.getElementById("container").style.display="block";
+           document.getElementById("data").style.display="none";
+            document.getElementById("button").innerHTML="Display List";
+     }else{
+            document.getElementById("container").style.display="none";
+            document.getElementById("data").style.display="block";
+            document.getElementById("button").innerHTML="Display Requirement";
+   
+     }
+   }
+</script>
 </head>
 <body style="margin-bottom:125px;">
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdVfuXdY5OK_j8Y_BXY-UxkLffeKDyQRxgjN6eQJEBwYqY5qg/viewform?embedded=true" width="100%" height="1700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+     <button id="button" onclick="toggle()">Display Requirement</button>
+     
+   
+
+<iframe id="container" src="https://docs.google.com/forms/d/e/1FAIpQLSdVfuXdY5OK_j8Y_BXY-UxkLffeKDyQRxgjN6eQJEBwYqY5qg/viewform?embedded=true" width="100%" height="1700" frameborder="0" marginheight="0" marginwidth="0" style="display:none">Loading…</iframe>
 
 <div class="freebirdFormviewerViewFormContentWrapper">
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTCcWI-08cyd75aOnR1MRHGAb4HZj8hTyHK7e12BS0pbP2D6oQrAOPOb3Gkp17XvZco_uwB40LqyzUh/pubhtml?gid=20481452&amp;single=true&amp;widget=true&amp;headers=false&amp;chrome=false&amp;range=B:G"width="370" height="250"  style="embed"></iframe>
+<iframe  id="data" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTCcWI-08cyd75aOnR1MRHGAb4HZj8hTyHK7e12BS0pbP2D6oQrAOPOb3Gkp17XvZco_uwB40LqyzUh/pubhtml?gid=20481452&amp;single=true&amp;widget=true&amp;headers=false&amp;chrome=false&amp;range=B:G"width="370" height="250"  style="display:block;"></iframe>
 </div>
 </body>
 </html>
